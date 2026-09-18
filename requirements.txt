@@ -1,0 +1,10 @@
+# FastMCP >=2.14 for the built-in GoogleProvider OAuth proxy
+# (fastmcp.server.auth.providers.google) used for the HTTP/Render deployment.
+# Pin below 3.0 since FastMCP 3.0 is a breaking major release.
+fastmcp>=2.14.0,<3.0.0
+
+# HTTP requests for calling the Google Analytics Data/Admin APIs
+requests>=2.31.0
+
+# Environment configuration
+python-dotenv>=1.0.0

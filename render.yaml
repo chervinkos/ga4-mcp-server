@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: ga4-mcp-server
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    envVars:
+      # Public URL of this service. Must match the Google Cloud OAuth
+      # client's redirect URI, minus the "/auth/callback" suffix.
+      - key: SERVER_BASE_URL
+        value: https://ga4-mcp-server.onrender.com
+      # Default GA4 property so tool calls don't need to pass property_id.
+      - key: GA4_PROPERTY_ID
+        value: "298408448"
+      - key: LOG_LEVEL
+        value: INFO
+      # Secrets - set these manually in the Render dashboard, not here.
+      - key: GOOGLE_OAUTH_CLIENT_ID
+        sync: false
+      - key: GOOGLE_OAUTH_CLIENT_SECRET
+        sync: false

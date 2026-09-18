@@ -1,0 +1,14 @@
+# Environment
+.env
+.env.*
+!env.example
+
+# Legacy local OAuth artifacts (desktop-flow leftovers, credentials JSON)
+google_analytics_token.json
+client_secret*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+lib/
