@@ -1,0 +1,3 @@
+# Default definitions for standard GA4 rows (label -> GA4 metric + dimension/filter).
+# PLACEHOLDER - filled after mapping confirmation.
+definitions: {}

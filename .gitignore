@@ -12,3 +12,5 @@ __pycache__/
 *.pyc
 .venv/
 lib/
+# Project configs contain GA4 property IDs and spreadsheet IDs; repo is public
+projects/
